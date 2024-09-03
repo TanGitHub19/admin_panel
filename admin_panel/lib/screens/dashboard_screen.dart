@@ -58,7 +58,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 itemCount: 20,
                 itemBuilder: (context, index) {
                   return CustomContainer(fullName: fullName,
-                  showIcon: true,);
+                  );
                   
                 },
               ),

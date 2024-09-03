@@ -1,3 +1,4 @@
+import 'package:admin_panel/screens/update_screen.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatefulWidget {
@@ -53,7 +54,9 @@ class _CustomContainerState extends State<CustomContainer> {
           ),
           if(widget.showIcon ?? false)
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const UpdateScreen()));
+            },
             icon: const Icon(Icons.update, size: 20), style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white,
